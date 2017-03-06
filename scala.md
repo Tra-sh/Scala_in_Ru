@@ -30,6 +30,7 @@
 - Option (None/Some) > Failure is an option
 - Immutable структуры данных в языке
 - Laziness в языке
+- Можно запихать в Docker и на Heroku
 
 ## Рулез
 
