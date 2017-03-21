@@ -7,3 +7,5 @@
 ## TO DO (To learn)
 
 - diamond problem?
+
+- **covariance** и **contravariance** долбить жоска.
