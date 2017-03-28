@@ -25,6 +25,16 @@
 
 ## Коллекции
 
+### Set
+
+- Отсутствуют методы Reverse и Sorted
+
+### Vector
+
+- есть метод `reverse` и `sorted`. Оба возвращает новый. Потомучто mutability is evil.
+- есть `head` и `tail`
+- `[Any]` не сортируется. Потому что Any не является Sortable
+
 ### Map
 
 - `Map ()` позволяет сделать литерал Map.
