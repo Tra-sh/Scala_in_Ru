@@ -71,7 +71,7 @@
 ### MutableList
 
 - `.clear` очищает mutable list
-- `for (i: Int <- 1 to 10)` - генератор.
+
 - `for (item <- sourceList) destMutableList += item * 2` - куда лучше.
 - `for (item <- sourceList) yield item * 2` - еще лучше и без побочных эффектов.
 - `for (item1 <- sourceList1; item2 <- sourceList2) yield item1 * item2` - вообще охуенно. size = size1*size2. а еще лучше использовать (паттерн) guard.
@@ -80,3 +80,8 @@
 
 - Это бесконечный List, вычисляемый Lazy
 - Могут быть утечки
+
+### Tuple
+
+### Triplet
+_1, _2, _3 - методы

@@ -9,3 +9,8 @@
 - diamond problem?
 
 - **covariance** и **contravariance** долбить жоска.
+
+- можно ли заставить ScalaStyle выводиться только в рамках sbt test и по сути быть dev dependency?
+
+- imports can be scoped
+
