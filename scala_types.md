@@ -76,6 +76,10 @@
 - `for (item <- sourceList) yield item * 2` - еще лучше и без побочных эффектов.
 - `for (item1 <- sourceList1; item2 <- sourceList2) yield item1 * item2` - вообще охуенно. size = size1*size2. а еще лучше использовать (паттерн) guard.
 
+### Mutable HashMap
+
+Можно `+`, нельзя `+=`, можно `++=`, можно `-= "fieldName"`
+
 ### Stream
 
 - Это бесконечный List, вычисляемый Lazy
@@ -84,4 +88,5 @@
 ### Tuple
 
 ### Triplet
+
 _1, _2, _3 - методы

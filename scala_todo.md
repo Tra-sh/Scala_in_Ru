@@ -12,5 +12,7 @@
 
 - можно ли заставить ScalaStyle выводиться только в рамках sbt test и по сути быть dev dependency?
 
-- imports can be scoped
+- imports can be scoped. надо определить куда-нибудь
+
+- classpath гипотетически может мешать импорту
 
