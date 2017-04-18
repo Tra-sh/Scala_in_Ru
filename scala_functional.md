@@ -48,3 +48,9 @@
 ### IF ELSE
 
 - поскольку оно возвращает значение, можно сделать `val x = if () ...`, как тернарный оператор в JS.
+
+
+### Tail Optimized Recursion
+- *факториал(100):Int* вернут 0. *факториал(10000):BigInt* вылетит с `StackOverflowException` потому что *recursive methods have limited stack space*
+- перед методом можно добавить `@scala.annotation.tailrec`, а можно сочетать `scala.annotation.tailrec` и `@tailrec`
+- Для оптимизации нужно, чтобы рекурсивный вызов был последним действием в теле метода. Можно использовать аккумулятор в качестве параметра

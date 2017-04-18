@@ -3,7 +3,11 @@
 ## Работа с типами данных
 
 - `isInstanceOf` - это как instanceof в JS
-- `asInstanceOf` - это приведение типа к заданному с вероятностью `ClassCastException`
+- `asInstanceOf` - это приведение типа к заданному с вероятностью `ClassCastException` (чтобы не произошло, нужно мэтчить тип или проверять `isInstanceOf`)
+
+### Тащатся (можно притащить) из Java
+
+- Comparable (группа типов)
 
 ## Иерархия типов
 
@@ -13,20 +17,36 @@
 - Scala.Null
 - Scala.Nothing (child всех, кстати говоря)
 
-### Можно притащить из Java
+## Примитивные типы (AnyVal)
 
-- Comparable (группа типов)
+### Boolean
 
-## Примитивные типы
+### Unit
+
+- Можно указать как тип возвращаемого значения, если очень нужно вернуть ничто.
+
+### Int, Short, Long, Float, Double и другие числа
+
+- `val a:Int = 123` можно выразить как `val a = 123:Int`
+- `val a:Long = 123` можно выразить как `val a = 123L`
+- `val a:Float = 1.0F` или `val a = 1.0F:Float`. Тут `F` нужна.
+- `val a: = 'x'` объявляет Char x.
+- `val a:Double = 123` можно выразить как `val a = 123D` (64 бита вместо 32 у Float)
+
+### Char
+
+## Коллекции и другие AnyRef
+
+- По смыслу `AnyRef` это `java.lang.Object`
+- `AnyRef` это родитель всех классов и Java и Scala.
 
 ### String
 
+- Является потомком `CharSequence`
 - `.mkString` - это как `.join`
 - `"""` - тройные кавычки определяют многострочный `String` (Smart String), включая переносы строк. Можно делать `"""str1    |str2""".stripMargin` или `"""str1    @str2""".stripMargin('@')`. Позволяют не экранировать `\` в регулярных выражениях.
 - `"hello, $s! how is $s?".format(param1, param2)`
 - `"hello, %2$s! how is %1$s?".format(param1, param2)`
-
-## Коллекции
 
 ### Set
 
