@@ -75,6 +75,14 @@
 - ```case `a` => ...``` — ??
 - `case (i: Int) if i > 5 => ()` так, например, можно поковыряться в методах данного значения
 
+#### Scala regex unapply magic
+
+- `val pattern = "Foo=([0-9]+) Bar=([A-Z]+)".r`
+- `//scala.util.matching.Regex = Foo=([0-9]+) Bar=([A-Z]+)`
+- `"Foo=123 Bar=ABC" match {
+    case pattern(foo, bar) => println("foobar looks like %s-%s".format(foo,bar))}`
+- `//foobar looks like 123-ABC`
+
 ### Абстрактные классы
 
 - Хороши для определения структуры
