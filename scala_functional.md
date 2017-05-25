@@ -68,8 +68,7 @@
 ### Tail Optimized Recursion
 
 - *факториал(100):Int* вернут 0. *факториал(10000):BigInt* вылетит с `StackOverflowException` потому что *recursive methods have limited stack space*
-- перед методом можно добавить `@scala.annotation.tailrec`, а можно сочетать `import scala.annotation.tailrec` и `@tailrec`
-- Для оптимизации нужно, чтобы рекурсивный вызов был последним действием в теле метода. Можно использовать аккумулятор в качестве параметра
+- перед методом можно добавить `@scala.annotation.tailrec`, а можно сочетать `import scala.annotation.tailrec` и `@tailrec`. Для оптимизации нужно, чтобы рекурсивный вызов был последним действием в теле метода. Можно использовать аккумулятор в качестве параметра. Чего-то там еще говорили про `final` для метода, но хз.
 
 ### Option, Some, None
 
