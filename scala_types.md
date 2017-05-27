@@ -129,7 +129,7 @@
 
 - `for (item <- sourceList) destMutableList += item * 2` - куда лучше.
 - `for (item <- sourceList) yield item * 2` - еще лучше и без побочных эффектов.
-- `for (item1 <- sourceList1; item2 <- sourceList2) yield item1 * item2` - вообще охуенно. size = size1*size2. а еще лучше использовать (паттерн) guard.
+- `for (item1 <- sourceList1; item2 <- sourceList2) yield item1 * item2` - вообще охуенно. size = size1*size2. а еще лучше использовать (паттерн) guard(?!?!?!?).
 
 ### Mutable HashMap
 
