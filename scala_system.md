@@ -18,6 +18,7 @@
 ### Threads
 
 - `new Thread {}`, `.start`
+- `val stackTraceAsArray = Thread.currentThread.getStackTrace; stackTraceAsArray.foreach(println)`
 
 ### Time
 
