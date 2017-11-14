@@ -155,7 +155,7 @@ the Apache HttpClient Java library
 
 `Анонимный класс`. То есть мы создаем объект тут же, на коленке.
 
-```
+```scala
 val X = new SomeTrait {
   val n = ???
   val m = ???
@@ -165,7 +165,7 @@ val X = new SomeTrait {
 Либо то же самое с экземпляром класса, но с override того, что происходит в теле.
 Либо без override, но тогда эти поля должны отсутствовать в классе
 
-```
+```scala
 val (X, Y) = someThing {
   ???
 }
@@ -174,7 +174,7 @@ val (X, Y) = someThing {
 Тут скорее всего someThing принимает byName
 Деструктивное присваивание из Tuple может ввести в заблуждение.
 
-```
+```scala
 val X = someThing { (n: Int) =>
   ???
 }
@@ -188,6 +188,15 @@ using - это управляющая структура. using автомати
 Скомпилированная функция - это инстансы трейтов F0 - F22 с методом apply.
 
 ### See also
+
 - The Procedure Syntax section of the Scala Style Guide
 - A bug entry about deprecating the Procedure syntax
 - How to prompt users for input from Scala shell scripts tutorial
+
+## PF 1
+
+- HOF - не только принимают function values, но и возвращают
+- First Order Functions
+- Нормальная тема, например, возвращать функцию, которая итерирует через рекурсию, например - внутри диапазона. Или еще чего. И применяет заранее переданную функцию посередине.
+
+- группы параметров - это partial application. Короч возвращает функцию.
